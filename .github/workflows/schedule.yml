@@ -18,7 +18,7 @@ jobs:
       - name: Run updater
         env:
           DISCOGS_TOKEN: ${{ secrets.DISCOGS_TOKEN }}
-          USER_AGENT: 'vinyl-price-app/1.0 +youremail@example.com'
+          USER_AGENT: 'vinyl-price-app/1.0 +d.vonechte@gmail.com'
         run: |
           python discogs_price_updater.py
       - name: Upload prices artifact
